@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/ip_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/no_url_yet"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ftp_status"
+            android:layout_width="118dp"
+            android:layout_height="86dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ftp_off" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/start_stop_button"
+        android:background="@anim/xml_border" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/start_stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/start_server"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/start_stop_button"
+        android:background="#303030" >
+
+        <ImageView
+     
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pin_blue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홈 디렉토리 : "
+            android:textColor="#24afdd" />
+
+        <TextView
+            android:id="@+id/directory"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="/sdcard"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
